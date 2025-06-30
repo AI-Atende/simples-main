@@ -1,39 +1,67 @@
-import React from 'react';
-import { Quote, Star } from 'lucide-react';
+import React from "react";
+import { Quote, Star } from "lucide-react";
+import mercia from "../assets/imgs/perfilMercia.webp";
+import henrique from "../assets/imgs/perfilhenrique.webp";
+import shirley from "../assets/imgs/perfilshirley.webp"
 
 const ResultsSection: React.FC = () => {
   const testimonials = [
     {
       name: "Maria Silva",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image:
+        "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
       text: "Voltei a sorrir sem vergonha! O tratamento superou minhas expectativas e mudou completamente minha autoestima.",
-      treatment: "Clareamento + Facetas"
+      treatment: "Clareamento + Facetas",
     },
     {
       name: "João Santos",
-      image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image:
+        "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400",
       text: "Profissionais incríveis! Minha esposa não para de elogiar meu novo sorriso. Vale cada centavo investido.",
-      treatment: "Implantes Dentários"
+      treatment: "Implantes Dentários",
     },
     {
       name: "Ana Costa",
-      image: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image:
+        "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400",
       text: "Não sentia dor há anos! Além do sorriso lindo, minha qualidade de vida melhorou drasticamente.",
-      treatment: "Tratamento Completo"
-    }
+      treatment: "Tratamento Completo",
+    },
+    {
+      name: "Mercia Rathunde",
+      image: mercia,
+      text: "Sempre com o melhor atendimento, cuidado, carinho com os pacientes. Cada vez que minha família vai a uma consulta sai mais feliz do que chegou! Gratidão à toda a equipe que faz o Dental Santé!!!",
+      treatment: "",
+    },
+    {
+      name: "Herike Carlos",
+      image: henrique,
+      text: "Clínica excelente , ótimos profissionais e funcionários atenciosos. Agendem logo sua avaliação! Lugar aconchegante e área kids",
+      treatment: "",
+    },
+    {
+      name: "Shirleide Lima",
+      image: shirley,
+      text: "Quero registrar meu elogio à Clínica Dental Sante pelo atendimento impecável. Fui recebida com acolhimento, cuidado e profissionalismo em cada detalhe. É nítido o compromisso da equipe com a excelência — da recepção ao consultório, tudo transmite confiança e respeito com o paciente.",
+      treatment: "",
+    },
   ];
 
   const beforeAfter = [
     {
-      before: "https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=400",
-      after: "https://images.pexels.com/photos/5938255/pexels-photo-5938255.jpeg?auto=compress&cs=tinysrgb&w=400",
-      treatment: "Clareamento Dental"
+      before:
+        "https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=400",
+      after:
+        "https://images.pexels.com/photos/5938255/pexels-photo-5938255.jpeg?auto=compress&cs=tinysrgb&w=400",
+      treatment: "Clareamento Dental",
     },
     {
-      before: "https://images.pexels.com/photos/6812033/pexels-photo-6812033.jpeg?auto=compress&cs=tinysrgb&w=400",
-      after: "https://images.pexels.com/photos/6812542/pexels-photo-6812542.jpeg?auto=compress&cs=tinysrgb&w=400",
-      treatment: "Ortodontia Invisível"
-    }
+      before:
+        "https://images.pexels.com/photos/6812033/pexels-photo-6812033.jpeg?auto=compress&cs=tinysrgb&w=400",
+      after:
+        "https://images.pexels.com/photos/6812542/pexels-photo-6812542.jpeg?auto=compress&cs=tinysrgb&w=400",
+      treatment: "Ortodontia Invisível",
+    },
   ];
 
   return (
@@ -44,9 +72,10 @@ const ResultsSection: React.FC = () => {
             Mais do que Dentes Bonitos: A Emoção de um Sorriso Renovado
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Imagine a liberdade de rir abertamente, a confiança em cada conversa, 
-            a alegria de se sentir bem consigo mesmo. Nossos tratamentos não apenas 
-            transformam sorrisos, eles resgatam a sua essência e a sua felicidade.
+            Imagine a liberdade de rir abertamente, a confiança em cada
+            conversa, a alegria de se sentir bem consigo mesmo. Nossos
+            tratamentos não apenas transformam sorrisos, eles resgatam a sua
+            essência e a sua felicidade.
           </p>
         </div>
 
@@ -60,7 +89,9 @@ const ResultsSection: React.FC = () => {
               <div key={index} className="bg-white rounded-2xl p-6 shadow-lg">
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <div>
-                    <p className="text-sm font-medium text-gray-500 mb-2">ANTES</p>
+                    <p className="text-sm font-medium text-gray-500 mb-2">
+                      ANTES
+                    </p>
                     <img
                       src={item.before}
                       alt="Antes do tratamento"
@@ -68,7 +99,9 @@ const ResultsSection: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-gray-500 mb-2">DEPOIS</p>
+                    <p className="text-sm font-medium text-gray-500 mb-2">
+                      DEPOIS
+                    </p>
                     <img
                       src={item.after}
                       alt="Depois do tratamento"
@@ -76,7 +109,9 @@ const ResultsSection: React.FC = () => {
                     />
                   </div>
                 </div>
-                <p className="text-center font-medium text-gray-700">{item.treatment}</p>
+                <p className="text-center font-medium text-gray-700">
+                  {item.treatment}
+                </p>
               </div>
             ))}
           </div>
@@ -89,9 +124,14 @@ const ResultsSection: React.FC = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg relative">
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-6 shadow-lg relative"
+              >
                 <Quote className="w-8 h-8 text-sky-500 mb-4" />
-                <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
+                <p className="text-gray-600 mb-6 italic">
+                  "{testimonial.text}"
+                </p>
                 <div className="flex items-center gap-4">
                   <img
                     src={testimonial.image}
@@ -99,13 +139,20 @@ const ResultsSection: React.FC = () => {
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
-                    <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500">{testimonial.treatment}</p>
+                    <p className="font-semibold text-gray-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      {testimonial.treatment}
+                    </p>
                   </div>
                 </div>
                 <div className="flex gap-1 mt-3">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={star}
+                      className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
               </div>

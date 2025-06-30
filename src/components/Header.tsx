@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           <span className="font-bold text-sm sm:text-base">ÚLTIMAS HORAS!</span>
         </div>
         <p className="text-sm sm:text-base">
-          Sua chance de ter o sorriso dos sonhos com <span className="font-bold">30% OFF</span> está acabando!
+          Sua chance de ter o sorriso dos sonhos com a primeira consulta <span className="font-bold">grátis</span> está acabando!
         </p>
         <CountdownTimer />
       </div>

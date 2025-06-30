@@ -6,7 +6,7 @@ import heroImage from "../assets/imgs/Invisalign.x16839.jpeg";
 const HeroSection = () => {
   return (
     <section className=" bg-gradient-to-br from-sky-50 to-blue-50 py-20 px-4">
-      <div className=" md:flex items-center justify-center max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-10 gap-3">
+      <div className=" md:flex  grid items-center justify-center max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-10 gap-3">
         <div className="space-y-8">
           <div className="space-y-4">
             <img src={logoinvisa} alt="" className="h-[35px]" />
@@ -54,17 +54,19 @@ const HeroSection = () => {
               <Calendar className="w-5 h-5 inline mr-2" />
               Agende sua Avaliação Gratuita
             </button>
-            <button className="border-2 border-sky-500 text-sky-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-sky-500 hover:text-white transition-all duration-200">
-              <Phone className="w-5 h-5 inline mr-2" />
-              (11) 99999-9999
-            </button>
+            <a href="tel:+558130940025" >
+              <button className="border-2 border-sky-500 text-sky-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-sky-500 hover:text-white transition-all duration-200">
+                <Phone className="w-5 h-5 inline mr-2" />
+                (81) 3094-0025
+              </button>
+            </a>
           </div>
         </div>
         <div className="">
           <img
             src={heroImage}
             alt=""
-            className="h-[400px] rounded-[40px] p-2"
+            className="md:h-[400px] rounded-[40px] p-2"
           />
         </div>
       </div>
