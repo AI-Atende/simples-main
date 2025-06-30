@@ -7,6 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
+          
           <div>
             <h3 className="text-2xl font-bold mb-4 text-sky-400">
               DentalCare Pro
