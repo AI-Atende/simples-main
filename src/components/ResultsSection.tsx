@@ -2,10 +2,11 @@ import React from "react";
 import { Quote, Star } from "lucide-react";
 import mercia from "../assets/imgs/perfilMercia.webp";
 import henrique from "../assets/imgs/perfilhenrique.webp";
-import shirley from "../assets/imgs/perfilshirley.webp";
-import carla from "../assets/imgs/CarlaCampos.webp";
-import tatiana from "../assets/imgs/tatiana.webp";
-
+import shirley from "../assets/imgs/perfilshirley.webp"
+import resul01antes from "../assets/imgs/Antesinvisalign01antes.webp"
+import resulo1dps from "../assets/imgs/Depoisinvisalign01dps.webp"
+import resul02antes from "../assets/imgs/AntesInvisalign2.webp"
+import resul02dps from "../assets/imgs/Depoisinvisalign2.webp"
 const ResultsSection: React.FC = () => {
   const testimonials = [
     {
@@ -49,18 +50,15 @@ const ResultsSection: React.FC = () => {
 
   const beforeAfter = [
     {
-      before:
-        "https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=400",
-      after:
-        "https://images.pexels.com/photos/5938255/pexels-photo-5938255.jpeg?auto=compress&cs=tinysrgb&w=400",
-      treatment: "Clareamento Dental",
+      before: resul01antes ,
+      after: resulo1dps ,
+      treatment: "",
     },
     {
-      before:
-        "https://images.pexels.com/photos/6812033/pexels-photo-6812033.jpeg?auto=compress&cs=tinysrgb&w=400",
-      after:
-        "https://images.pexels.com/photos/6812542/pexels-photo-6812542.jpeg?auto=compress&cs=tinysrgb&w=400",
-      treatment: "Ortodontia Invisível",
+      before:  resul02antes ,
+
+      after:  resul02dps ,
+      treatment: "",
     },
   ];
 
