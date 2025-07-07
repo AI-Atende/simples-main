@@ -2,30 +2,30 @@ import React from "react";
 import { Quote, Star } from "lucide-react";
 import mercia from "../assets/imgs/perfilMercia.webp";
 import henrique from "../assets/imgs/perfilhenrique.webp";
-import shirley from "../assets/imgs/perfilshirley.webp"
+import shirley from "../assets/imgs/perfilshirley.webp";
+import carla from "../assets/imgs/CarlaCampos.webp";
+import tatiana from "../assets/imgs/tatiana.webp";
 
 const ResultsSection: React.FC = () => {
   const testimonials = [
     {
-      name: "Maria Silva",
-      image:
-        "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400",
-      text: "Voltei a sorrir sem vergonha! O tratamento superou minhas expectativas e mudou completamente minha autoestima.",
-      treatment: "Clareamento + Facetas",
+      name: "Carla Campos",
+      image: carla,
+      text: "A clínica é sem duvida a melhor de Recife! Desde o atendimento até os tratamentos, altamente eficazes! Profissionais experientes, competentes e comprometidos. Promete muito e entrega tudo!! Estou muito satisfeita com meu resultado.",
+      treatment: "",
     },
     {
       name: "João Santos",
-      image:
-        "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400",
-      text: "Profissionais incríveis! Minha esposa não para de elogiar meu novo sorriso. Vale cada centavo investido.",
-      treatment: "Implantes Dentários",
+      image: tatiana,
+      text: "Adorei conhecer a clínica, linda! Amei a tarde, um momento para recarregar as energias e se renovar. Uma delicia!",
+      treatment: "",
     },
     {
       name: "Ana Costa",
       image:
         "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400",
       text: "Não sentia dor há anos! Além do sorriso lindo, minha qualidade de vida melhorou drasticamente.",
-      treatment: "Tratamento Completo",
+      treatment: "",
     },
     {
       name: "Mercia Rathunde",
@@ -126,9 +126,9 @@ const ResultsSection: React.FC = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-lg relative"
+                className="bg-white rounded-2xl p-6 shadow-lg relative "
               >
-                <Quote className="w-8 h-8 text-sky-500 mb-4" />
+                <Quote className="w-5 h-5 text-sky-500 mb-4 items-center" />
                 <p className="text-gray-600 mb-6 italic">
                   "{testimonial.text}"
                 </p>
@@ -136,7 +136,7 @@ const ResultsSection: React.FC = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
+                    className="w-10 h-10 rounded-full object-cover"
                   />
                   <div>
                     <p className="font-semibold text-gray-900">
