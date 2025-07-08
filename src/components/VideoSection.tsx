@@ -1,5 +1,5 @@
-import React from 'react';
-import { CheckCircle, Play } from 'lucide-react';
+import React from "react";
+import { CheckCircle } from "lucide-react";
 
 const VideoSection: React.FC = () => {
   return (
@@ -25,8 +25,8 @@ const VideoSection: React.FC = () => {
                   Avaliação Personalizada
                 </h3>
                 <p className="text-gray-600">
-                  Nossos especialistas analisam suas necessidades para um plano de 
-                  tratamento exclusivo e adequado ao seu perfil.
+                  Nossos especialistas analisam suas necessidades para um plano
+                  de tratamento exclusivo e adequado ao seu perfil.
                 </p>
               </div>
             </div>
@@ -40,8 +40,8 @@ const VideoSection: React.FC = () => {
                   Tratamento Confortável e Eficaz
                 </h3>
                 <p className="text-gray-600">
-                  Utilizamos as mais modernas tecnologias para garantir seu conforto 
-                  e resultados rápidos durante todo o processo.
+                  Utilizamos as mais modernas tecnologias para garantir seu
+                  conforto e resultados rápidos durante todo o processo.
                 </p>
               </div>
             </div>
@@ -55,8 +55,8 @@ const VideoSection: React.FC = () => {
                   Sorriso Transformado
                 </h3>
                 <p className="text-gray-600">
-                  Desfrute da confiança e alegria de um sorriso que sempre sonhou, 
-                  com resultados duradouros e naturais.
+                  Desfrute da confiança e alegria de um sorriso que sempre
+                  sonhou, com resultados duradouros e naturais.
                 </p>
               </div>
             </div>
@@ -64,27 +64,27 @@ const VideoSection: React.FC = () => {
             <div className="pt-6">
               <div className="flex items-center gap-3 text-green-600">
                 <CheckCircle className="w-5 h-5" />
-                <span className="font-medium">Processo 100% seguro e indolor</span>
+                <span className="font-medium">
+                  Processo 100% seguro e indolor
+                </span>
               </div>
               <div className="flex items-center gap-3 text-green-600 mt-2">
                 <CheckCircle className="w-5 h-5" />
-                <span className="font-medium">Resultados visíveis desde a primeira sessão</span>
+                <span className="font-medium">
+                  Resultados visíveis desde a primeira sessão
+                </span>
               </div>
             </div>
           </div>
 
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.pexels.com/photos/6529409/pexels-photo-6529409.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Tratamento odontológico moderno"
-                className="w-full h-80 object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                <button className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-all duration-200 transform hover:scale-110">
-                  <Play className="w-8 h-8 text-sky-500 ml-1" />
-                </button>
-              </div>
+              <iframe
+                src="https://www.youtube.com/embed/VSqt5L1ecvs?si=6phgAduCHCxoetlL"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                className="w-full h-[315px]"
+              ></iframe>
             </div>
             <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-lg shadow-lg">
               <p className="font-semibold text-sm">Veja como funciona</p>

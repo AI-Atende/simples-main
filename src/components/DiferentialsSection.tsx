@@ -1,38 +1,44 @@
-import React from 'react';
-import { Award, Heart, Shield, Sparkles, Users, Zap } from 'lucide-react';
+import React from "react";
+import { Award, Heart, Shield, Sparkles, Users, Zap } from "lucide-react";
 
 const DiferentialsSection: React.FC = () => {
   const diferentials = [
     {
       icon: Zap,
       title: "Tecnologia de Ponta",
-      description: "Equipamentos de última geração para diagnósticos precisos e tratamentos menos invasivos."
+      description:
+        "Equipamentos de última geração para diagnósticos precisos e tratamentos menos invasivos.",
     },
     {
       icon: Users,
       title: "Equipe Especializada",
-      description: "Profissionais altamente qualificados e em constante atualização, dedicados ao seu bem-estar."
+      description:
+        "Profissionais altamente qualificados e em constante atualização, dedicados ao seu bem-estar.",
     },
     {
       icon: Heart,
       title: "Atendimento Humanizado",
-      description: "Aqui, você não é apenas um paciente, é parte da nossa família. Cuidado e atenção em cada etapa."
+      description:
+        "Aqui, você não é apenas um paciente, é parte da nossa família. Cuidado e atenção em cada etapa.",
     },
     {
       icon: Sparkles,
       title: "Ambiente Acolhedor",
-      description: "Um espaço pensado para o seu conforto e tranquilidade, tornando sua visita uma experiência agradável."
+      description:
+        "Um espaço pensado para o seu conforto e tranquilidade, tornando sua visita uma experiência agradável.",
     },
     {
       icon: Shield,
       title: "Garantia de Qualidade",
-      description: "Nosso compromisso com resultados duradouros e sua satisfação total."
+      description:
+        "Nosso compromisso com resultados duradouros e sua satisfação total.",
     },
     {
       icon: Award,
       title: "Reconhecimento Profissional",
-      description: "Certificações internacionais e prêmios que atestam nossa excelência em odontologia."
-    }
+      description:
+        "Certificações internacionais e prêmios que atestam nossa excelência em odontologia.",
+    },
   ];
 
   return (

@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Clock } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Clock } from "lucide-react";
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({
     hours: 23,
     minutes: 59,
-    seconds: 59
+    seconds: 59,
   });
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(prev => {
+      setTimeLeft((prev) => {
         if (prev.seconds > 0) {
           return { ...prev, seconds: prev.seconds - 1 };
         } else if (prev.minutes > 0) {
@@ -31,15 +31,15 @@ const CountdownTimer: React.FC = () => {
       <Clock className="w-4 h-4" />
       <div className="flex gap-1 font-mono text-sm">
         <span className="bg-white bg-opacity-20 px-2 py-1 rounded">
-          {String(timeLeft.hours).padStart(2, '0')}
+          {String(timeLeft.hours).padStart(2, "0")}
         </span>
         <span>:</span>
         <span className="bg-white bg-opacity-20 px-2 py-1 rounded">
-          {String(timeLeft.minutes).padStart(2, '0')}
+          {String(timeLeft.minutes).padStart(2, "0")}
         </span>
         <span>:</span>
         <span className="bg-white bg-opacity-20 px-2 py-1 rounded">
-          {String(timeLeft.seconds).padStart(2, '0')}
+          {String(timeLeft.seconds).padStart(2, "0")}
         </span>
       </div>
     </div>

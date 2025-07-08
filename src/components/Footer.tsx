@@ -21,7 +21,8 @@ const Footer: React.FC = () => {
             <img src={logo} alt="" className="" />
             <p className="text-gray-300 mb-6 leading-relaxed">
               Transformando sorrisos com excelência, tecnologia e cuidado
-              humanizado.<br/> Sua saúde bucal é nossa prioridade.
+              humanizado.
+              <br /> Sua saúde bucal é nossa prioridade.
             </p>
             <div className="flex gap-4">
               <a
@@ -59,7 +60,7 @@ const Footer: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-green-400" />
                 <div>
-                  <p className="font-medium">(81) 3094-0025</p>
+                  <p className="font-medium">(81) 93094-0025</p>
                   <p className="text-sm text-gray-400">WhatsApp</p>
                 </div>
               </div>
@@ -79,14 +80,20 @@ const Footer: React.FC = () => {
             <div className="flex items-start gap-3 mb-4">
               <MapPin className="w-5 h-5 text-sky-400 mt-1" />
               <div>
-                <p className="font-medium">Av. Bernardo Vieira de Melo, 2418 - Piedade</p>
+                <p className="font-medium">
+                  Av. Bernardo Vieira de Melo, 2418 - Piedade
+                </p>
                 <p className="text-gray-300">CEP: 54410-010</p>
               </div>
             </div>
-            <a href="https://maps.app.goo.gl/G4tMPvKSL2GwfdHw8" target="_blank" rel="noopener noreferrer">
-            <button className="text-sky-400 hover:text-sky-300 transition-colors text-sm font-medium">
-              Ver no Google Maps →
-            </button>
+            <a
+              href="https://maps.app.goo.gl/G4tMPvKSL2GwfdHw8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="text-sky-400 hover:text-sky-300 transition-colors text-sm font-medium">
+                Ver no Google Maps →
+              </button>
             </a>
           </div>
 
@@ -110,7 +117,6 @@ const Footer: React.FC = () => {
                   <p className="text-gray-300">8h às 12h</p>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -119,8 +125,8 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2025 Clínica Odontológica Dental Santé. Todos os direitos reservados. Cuidando do
-              seu sorriso com excelência e carinho.
+              © 2025 Clínica Odontológica Dental Santé. Todos os direitos
+              reservados. Cuidando do seu sorriso com excelência e carinho.
             </p>
             <div className="flex gap-6 text-sm">
               <a

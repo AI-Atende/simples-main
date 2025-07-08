@@ -9,6 +9,13 @@ import resul01antes from "../assets/imgs/Antesinvisalign01antes.webp";
 import resulo1dps from "../assets/imgs/Depoisinvisalign01dps.webp";
 import resul02antes from "../assets/imgs/AntesInvisalign2.webp";
 import resul02dps from "../assets/imgs/Depoisinvisalign2.webp";
+import caso03antes from "../assets/imgs/caso03antes.webp";
+import caso03dps from "../assets/imgs/caso03dps.webp";
+import caso04antes from "../assets/imgs/caso04antes.webp";
+import caso04dps from "../assets/imgs/caso04dps.webp";
+import caso05antes from "../assets/imgs/caso05antes.webp";
+import caso05dps from "../assets/imgs/caso05dps.webp";
+
 const ResultsSection: React.FC = () => {
   const testimonials = [
     {
@@ -61,7 +68,21 @@ const ResultsSection: React.FC = () => {
       after: resul02dps,
       treatment: "",
     },
-   
+    {
+      before: caso03antes,
+      after: caso03dps,
+      treatment: "",
+    },
+    {
+      before: caso04antes,
+      after: caso04dps,
+      treatment: "",
+    },
+    {
+      before: caso05antes,
+      after: caso05dps,
+      treatment: "",
+    },
   ];
 
   return (
@@ -84,10 +105,10 @@ const ResultsSection: React.FC = () => {
           <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
             Transformações Reais
           </h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {beforeAfter.map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-6 shadow-lg">
-                <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
                     <p className="text-sm font-medium text-gray-500 mb-2">
                       ANTES
@@ -161,9 +182,11 @@ const ResultsSection: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
+          <a href="#">
           <button className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-sky-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
             Quero Resultados Como Estes!
           </button>
+          </a>
         </div>
       </div>
     </section>

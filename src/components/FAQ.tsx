@@ -1,43 +1,51 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
-    {
-      question: "Quais convênios vocês aceitam?",
-      answer: "Trabalhamos com os principais convênios odontológicos do mercado, incluindo Bradesco Dental, SulAmérica Odonto, Amil Dental, entre outros. Entre em contato para verificar se seu plano está coberto."
-    },
-    {
-      question: "Os tratamentos são dolorosos?",
-      answer: "Utilizamos técnicas modernas de anestesia e sedação consciente para garantir que você tenha o máximo conforto durante todos os procedimentos. Nosso foco é tornar sua experiência a mais tranquila possível."
-    },
-    {
-      question: "Qual o tempo médio de duração dos tratamentos?",
-      answer: "O tempo varia conforme o tipo de tratamento. Limpezas e clareamentos podem ser feitos em uma sessão, enquanto tratamentos como ortodontia podem levar de 12 a 24 meses. Fazemos um cronograma personalizado na sua consulta."
-    },
-    {
-      question: "Vocês oferecem opções de pagamento?",
-      answer: "Sim! Oferecemos diversas formas de pagamento: à vista com desconto, parcelamento no cartão em até 12x, financiamento próprio em até 24x sem juros, e também aceitamos PIX e transferência bancária."
-    },
-    {
-      question: "Como faço para agendar uma consulta?",
-      answer: "É muito fácil! Você pode agendar pelo WhatsApp (11) 99999-9999, ligar no (11) 3333-3333, ou preencher o formulário aqui no site. Retornamos em até 2 horas para confirmar seu horário."
-    },
-    {
-      question: "Vocês atendem emergências?",
-      answer: "Sim, temos plantão 24h para emergências odontológicas. Entre em contato pelo nosso WhatsApp de emergência que será direcionado para o dentista de plantão."
-    },
-    {
-      question: "É possível fazer uma avaliação online?",
-      answer: "Oferecemos consultas online para orientações gerais e triagem, mas para um diagnóstico preciso e início de tratamento, é necessária uma avaliação presencial em nossa clínica."
-    },
-    {
-      question: "Vocês garantem os resultados dos tratamentos?",
-      answer: "Sim! Todos os nossos tratamentos possuem garantia. O período varia conforme o procedimento realizado, e explicamos detalhadamente durante a consulta inicial."
-    }
-  ];
+  {
+    question: "Invisalign dói?",
+    answer:
+      "O desconforto é mínimo. Nos primeiros dias após trocar os alinhadores, você pode sentir uma leve pressão — sinal de que os dentes estão se movendo. A maioria dos pacientes se adapta rapidamente.",
+  },
+  {
+    question: "Quanto tempo dura o tratamento com Invisalign?",
+    answer:
+      "Depende da complexidade do seu caso. Em média, tratamentos com Invisalign duram entre 6 e 18 meses. Após a avaliação, criamos um plano personalizado com a duração estimada.",
+  },
+  {
+    question: "Preciso usar o Invisalign o dia todo?",
+    answer:
+      "Sim. Para que o tratamento seja eficaz, é necessário usar os alinhadores por 20 a 22 horas por dia, retirando apenas para comer, beber líquidos quentes ou escovar os dentes.",
+  },
+  {
+    question: "Com que frequência preciso trocar os alinhadores?",
+    answer:
+      "Normalmente a cada 7 a 14 dias, conforme o plano definido pelo dentista. Cada alinhador é feito para mover seus dentes gradualmente até a posição desejada.",
+  },
+  {
+    question: "Posso comer com os alinhadores?",
+    answer:
+      "Não. Os alinhadores devem ser removidos durante as refeições. Isso evita danos ao material e mantém a higiene bucal em dia.",
+  },
+  {
+    question: "Como faço para limpar meus alinhadores?",
+    answer:
+      "A limpeza é simples! Basta escová-los suavemente com escova de dentes e sabão neutro, além de enxaguar com água fria. Também oferecemos kits de limpeza específicos na clínica.",
+  },
+  {
+    question: "É possível fazer Invisalign com convênio?",
+    answer:
+      "Aceitamos convênio odontológico somente para a consulta inicial de avaliação com nossos dentistas especialistas. O tratamento com Invisalign não é coberto pelo convênio, mas oferecemos condições facilitadas de pagamento.",
+  },
+  {
+    question: "Quais são as formas de pagamento para Invisalign?",
+    answer:
+      "Aqui na Dental Santé, aceitamos pagamentos via cartão de crédito, débito, dinheiro e Pix para maior comodidade dos nossos pacientes.",
+  },
+];
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -50,9 +58,7 @@ const FAQ: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Suas Dúvidas Respondidas
           </h2>
-          <p className="text-xl text-gray-600">
-            Tudo o que Você Precisa Saber
-          </p>
+          <p className="text-xl text-gray-600">Tudo o que Você Precisa Saber</p>
         </div>
 
         <div className="space-y-4">
@@ -74,16 +80,16 @@ const FAQ: React.FC = () => {
                   <ChevronDown className="w-6 h-6 text-gray-400 flex-shrink-0" />
                 )}
               </button>
-              
-              <div className={`transition-all duration-300 ease-in-out ${
-                openIndex === index 
-                  ? 'max-h-96 opacity-100' 
-                  : 'max-h-0 opacity-0'
-              } overflow-hidden`}>
+
+              <div
+                className={`transition-all duration-300 ease-in-out ${
+                  openIndex === index
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
+                } overflow-hidden`}
+              >
                 <div className="px-8 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                 </div>
               </div>
             </div>
@@ -94,9 +100,11 @@ const FAQ: React.FC = () => {
           <p className="text-gray-600 mb-6">
             Ainda tem dúvidas? Entre em contato conosco!
           </p>
+          <a href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93">
           <button className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
             Falar com Especialista
           </button>
+          </a>
         </div>
       </div>
     </section>

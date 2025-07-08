@@ -1,6 +1,6 @@
-import React from 'react';
-import { AlertTriangle } from 'lucide-react';
-import CountdownTimer from './CountdownTimer';
+import React from "react";
+import { AlertTriangle } from "lucide-react";
+import CountdownTimer from "./CountdownTimer";
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +11,8 @@ const Header: React.FC = () => {
           <span className="font-bold text-sm sm:text-base">ÚLTIMAS HORAS!</span>
         </div>
         <p className="text-sm sm:text-base">
-          Sua chance de ter o sorriso dos sonhos com a primeira consulta <span className="font-bold">grátis</span> está acabando!
+          Sua chance de ter o sorriso dos sonhos com a primeira consulta{" "}
+          <span className="font-bold">grátis</span> está acabando!
         </p>
         <CountdownTimer />
       </div>
