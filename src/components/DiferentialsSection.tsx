@@ -74,20 +74,20 @@ const DiferentialsSection: React.FC = () => {
 
         <div className="mt-16 bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-4">
-            Mais de 15 Anos Transformando Sorrisos
+            Mais de 13 Anos Transformando Sorrisos
           </h3>
           <div className="grid md:grid-cols-3 gap-8 mt-8">
             <div>
-              <div className="text-4xl font-bold mb-2">1000+</div>
-              <div className="text-sky-100">Pacientes Satisfeitos</div>
+              <div className="text-4xl font-bold mb-2">+ 21.348</div>
+              <div className="text-sky-100">VIDAS TRANSFORMADAS</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">98%</div>
-              <div className="text-sky-100">Taxa de Satisfação</div>
+              <div className="text-4xl font-bold mb-2">+ 83.453</div>
+              <div className="text-sky-100">TRATAMENTOS REALIZADOS</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">24h</div>
-              <div className="text-sky-100">Suporte de Emergência</div>
+              <div className="text-4xl font-bold mb-2">+ 7</div>
+              <div className="text-sky-100">Prêmios</div>
             </div>
           </div>
         </div>

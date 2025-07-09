@@ -5,7 +5,10 @@ import heroImage from "../assets/imgs/Invisalign.x16839.jpeg";
 
 const HeroSection = () => {
   return (
-    <section className=" bg-gradient-to-br from-sky-50 to-blue-50 py-20 px-4" id="#">
+    <section
+      className=" bg-gradient-to-br from-sky-50 to-blue-50 py-20 px-4"
+      id="#"
+    >
       <div className=" md:flex  grid items-center justify-center max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-10 gap-3">
         <div className="space-y-8">
           <div className="space-y-4">
@@ -22,13 +25,19 @@ const HeroSection = () => {
               Invisalign é a resposta que você procura.
             </p>
           </div>
-
+          <div className="md:w-2/2 md:hidden">
+            <img
+              src={heroImage}
+              alt=""
+              className="md:h-[400px] rounded-[40px] p-2"
+            />
+          </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93">
-            <button className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-sky-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
-              <Calendar className="w-5 h-5 inline mr-2" />
-              Agende sua Avaliação Gratuita
-            </button>
+              <button className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-sky-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                <Calendar className="w-5 h-5 inline mr-2" />
+                Agende sua Avaliação Gratuita
+              </button>
             </a>
             <a href="tel:+558130940025">
               <button className="border-2 border-sky-500 text-sky-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-sky-500 hover:text-white transition-all duration-200">
@@ -38,7 +47,7 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-        <div className="">
+        <div className="md:w-2/2 hidden sm:block">
           <img
             src={heroImage}
             alt=""
