@@ -72,7 +72,6 @@ const SectionVideos = () => {
               <div className="bg-white rounded-xl shadow-md flex flex-col lg:flex-row justify-center items-center w-full h-auto lg:h-[500px] p-4">
                 <video
                   src={video.src}
-                  controls
                   autoPlay
                   muted
                   playsInline
@@ -101,12 +100,12 @@ const SectionVideos = () => {
         </button>
       </div>
       <div className="text-center mt-12">
-          <a href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93">
+        <a href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93">
           <button className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
             Agende sua Avaliação
           </button>
-          </a>
-        </div>
+        </a>
+      </div>
     </section>
   );
 };
