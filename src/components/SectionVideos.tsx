@@ -23,7 +23,7 @@ const SectionVideos = () => {
       src: video01,
       titulo: "Veja em 3D como seu novo sorriso vai ficar",
       description:
-        "Com a tecnologia exclusiva ClinCheck®, você consegue visualizar todo o planejamento do seu tratamento Invisalign antes mesmo de começar. ",
+        "Com a tecnologia exclusiva ClinCheck®, você consegue visualizar todo o planejamento do seu tratamento Invisalign antes mesmo de começar.",
       description2:
         "No vídeo ao lado, mostramos uma simulação real: é possível ver o movimento exato de cada dente, etapa por etapa, até alcançar o alinhamento ideal.",
     },
@@ -46,8 +46,8 @@ const SectionVideos = () => {
   ];
 
   return (
-    <section className="py-10 px-4 w-auto bg-white-100">
-      <div className="text-center">
+    <section className="py-10 px-4 w-auto bg-gradient-to-br from-gray-50 to-blue-50">
+      <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
           Veja Seu Novo Sorriso Antes Mesmo de Sorrir para o Espelho
         </h2>
@@ -56,33 +56,35 @@ const SectionVideos = () => {
           da sua transformação com segurança, clareza e emoção.
         </p>
       </div>
+
       <div className="relative">
         {/* Setas laterais */}
         <button
           onClick={() => instanceRef.current?.prev()}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 text-white px-3 py-2 rounded-full hover:bg-blue-700"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700"
         >
-          <MdArrowBackIosNew />
+          <MdArrowBackIosNew size={24} />
         </button>
 
         <div ref={sliderRef} className="keen-slider">
           {videos.map((video, index) => (
-            <div key={index} className="keen-slider__slide">
-              <div className="bg-white rounded-xl shadow-md flex justify-center items-center w-full h-[500px]">
+            <div key={index} className="keen-slider__slide px-2">
+              <div className="bg-white rounded-xl shadow-md flex flex-col lg:flex-row justify-center items-center w-full h-auto lg:h-[500px] p-4">
                 <video
                   src={video.src}
                   controls
-                  className="rounded-md w-2/4 h-100 object-cover mb-4"
                   autoPlay
                   muted
                   playsInline
+                  loop
+                  className="rounded-md w-full lg:w-2/4 h-auto object-cover mb-4 lg:mb-0"
                 />
-                <div className="text-wrap  ml-10">
-                  <h2 className="text-xl mb-5 ">{video.titulo}</h2>
-                  <p className="text-gray-700 text-[15px] w-[500px]">
+                <div className="lg:ml-10 mt-4 lg:mt-0 text-center lg:text-left px-2">
+                  <h2 className="text-xl mb-5 font-semibold">{video.titulo}</h2>
+                  <p className="text-gray-700 text-[15px] max-w-md mx-auto lg:mx-0">
                     {video.description}
                   </p>
-                  <p className="text-gray-700 text-[15px] w-[500px]">
+                  <p className="text-gray-700 text-[15px] max-w-md mx-auto lg:mx-0 mt-2">
                     {video.description2}
                   </p>
                 </div>
@@ -93,9 +95,9 @@ const SectionVideos = () => {
 
         <button
           onClick={() => instanceRef.current?.next()}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 text-white px-3 py-2 rounded-full hover:bg-blue-700"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700"
         >
-          <IoIosArrowForward />
+          <IoIosArrowForward size={24} />
         </button>
       </div>
     </section>

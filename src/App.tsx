@@ -15,10 +15,10 @@ function App() {
       <HeroSection />
       <VideoSection />
       <ResultsSection />
+      <SectionVideos/>
       <DiferentialsSection />
       <FAQ />
       <Footer />
-      <SectionVideos/>
     </div>
   );
 }
