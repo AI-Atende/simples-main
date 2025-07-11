@@ -6,6 +6,7 @@ import ResultsSection from './components/ResultsSection';
 import DiferentialsSection from './components/DiferentialsSection';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import SectionVideos from './components/SectionVideos';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <DiferentialsSection />
       <FAQ />
       <Footer />
+      <SectionVideos/>
     </div>
   );
 }
