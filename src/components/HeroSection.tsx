@@ -36,7 +36,7 @@ const HeroSection = () => {
             <a href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93">
               <button className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-sky-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
                 <Calendar className="w-5 h-5 inline mr-2" />
-                Agende sua Avaliação Gratuita
+                Agende sua Avaliação
               </button>
             </a>
             <a href="tel:+558130940025">
